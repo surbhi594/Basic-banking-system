@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Banking System</title>
+    <link rel="stylesheet" href="https://unpkg.com/bootstrap-material-design@4.1.1/dist/css/bootstrap-material-design.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+</head>
+
+<body onload="loader()">
+
+    <div id="loading"></div>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="./index.html">BBS Bank</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="nav navbar-nav navbar-right ml-auto">
+                    <li>
+                        <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#mu-about-us">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./customers.html">Customers</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./transfer.html">Money Transfer</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- here content starts here -->
+    <div class="container-fluid hero-content">
+        <div class="row align-items-center">
+            <div class="col-md-6 col-sm-12 text-center" data-aos="fade-up">
+                <h1>Welcome to <span id="sp" class="font-weight-bold">BBS Bank </span></h1>
+                <!-- <h1>Easiest Way to <span id="sp" class="font-weight-bold">Transfer Money</span></h1> -->
+                <p class="lead muted">Easiest Way to Transfer Money <span id="sp" class="font-weight-bold">In Seconds</span></p>
+
+                <br>
+                <br>
+                <button type="button" class="btn btn-primary btn-lg" onclick="location.href = './customers.html';">View Customer
+          Details</button>
+                <button type="button" class="btn btn-primary btn-lg" onclick="location.href = './transfer.html';">Transfer
+          Money</button>
+            </div>
+            <div class="col-md-6 col-sm-12 text-center" data-aos="fade-left">
+                <div class="hero-img-div">
+                    <img class="hero-img" src="assets/media/home.png" alt="img-showing-money-transfer">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Start About us -->
+    <section id="mu-about-us">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="mu-about-us-area">
+
+                        <div class="mu-title">
+                            <h2>ABOUT US</h2>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="mu-about-us-left">
+                                    <img src="assets/media/about.png" alt="img" width="500px" height="400px">
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="mu-about-us-right">
+                                    <p>This is a Banking System where you can transfer you money easily using our portal safely. We work for making task of regular customers going to banks , easy and smooth.</p>
+                                    <p>The System is made by Surbhi Srivastava under Internship Task-1 by The Sparks Foundation</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End About us -->
+
+
+    
+
+        <!-- Start Footer -->
+        <footer id="mu-footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="mu-footer-area">
+                            <div class="mu-footer-social">
+                                <a href="#"><span class="fa fa-facebook"></span></a>
+                                <a href="#"><span class="fa fa-twitter"></span></a>
+                                <a href="#"><span class="fa fa-google-plus"></span></a>
+                                <a href="#"><span class="fa fa-linkedin"></span></a>
+                                <a href="#"><span class="fa fa-youtube"></span></a>
+                            </div>
+                            <div class="mu-footer-copyright">
+                                <p>&copy; Copyright 2021 -Surbhi Srivastava</a>. All right reserved.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- End Footer -->
+
+
+
+       
+        <script>
+            var preloader = document.getElementById("loading");
+
+            function loader() {
+                preloader.style.display = 'none';
+            }
+        </script>
+
+        <script src="assets/js/script.js"></script>
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+        <script src="https://unpkg.com/popper.js@1.12.6/dist/umd/popper.js"></script>
+        <script src="https://unpkg.com/bootstrap-material-design@4.1.1/dist/js/bootstrap-material-design.js"></script>
+
+        <!-- aos data  -->
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+            AOS.init({
+                duration: 500,
+            });
+        </script>
+
+</body>
+
+</html>
